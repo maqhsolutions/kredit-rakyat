@@ -6,6 +6,8 @@ interface HeroProps {
     onOpenModal: () => void;
 }
 
+declare const AOS: { init: (options?: Record<string, unknown>) => void };
+
 export default function Hero({ onOpenModal }: HeroProps) {
     const [loanAmount, setLoanAmount] = useState(50000);
     const [displayAmount, setDisplayAmount] = useState("50,000");
@@ -13,12 +15,11 @@ export default function Hero({ onOpenModal }: HeroProps) {
     const interestRate = 0.035;
 
     useEffect(() => {
-        // @ts-ignore
         if (typeof AOS !== 'undefined') {
-            // @ts-ignore
             AOS.init({ duration: 800, once: true, offset: 50 });
         }
     }, []);
+
 
     const totalInterest = loanAmount * interestRate * tenure;
     const totalPayment = loanAmount + totalInterest;
