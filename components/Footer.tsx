@@ -41,20 +41,26 @@ export default function Footer() {
 
                     <div>
                         <h4 className="font-bold text-gray-900 mb-6">Hubungi</h4>
-                        <ul className="space-y-3 text-sm text-gray-600">
-                            <li className="flex items-center gap-2"><i className="fas fa-envelope text-primary w-4"></i> info@kreditrakyat.com</li>
-                            <li className="flex items-center gap-2"><i className="fas fa-phone text-primary w-4"></i> 03-XXXX XXXX</li>
-                            <li className="flex items-center gap-2"><i className="fas fa-map-marker-alt text-primary w-4"></i> Kuala Lumpur, Malaysia</li>
+                        <ul className="space-y-4 text-sm text-gray-600">
+                            <li className="flex items-center gap-3"><i className="fas fa-envelope text-primary w-4"></i> infokreditrakyat@gmail.com</li>
+                            <li className="flex items-center gap-3"><i className="fas fa-phone text-primary w-4"></i> +6014 704 7275</li>
+                            <li className="flex items-start gap-3"><i className="fas fa-map-marker-alt text-primary w-4 mt-1"></i> <span className="leading-snug">7A-1, Jalan SS5B/4 Kelana Jaya,<br/>47301 Petaling Jaya,<br/>Selangor, Malaysia</span></li>
                         </ul>
                     </div>
                 </div>
 
+                <div className="border-t border-gray-200 mt-8 pt-8 mb-8 text-xs text-gray-500 leading-relaxed text-justify">
+                    <p>
+                        <strong>Maklumat Identiti & Kepatuhan Polisi Kewangan:</strong> Kredit Rakyat adalah entiti pemasaran rasmi yang diuruskan sepenuhnya oleh <strong>Rakyat Fintech Sdn. Bhd.</strong> Tempoh bayaran balik pembiayaan bermula dari minimum 12 bulan sehingga maksimum 120 bulan. Kadar Peratusan Tahunan (APR) maksimum adalah sekitar 4.99% tertakluk pada tawaran semasa institusi kewangan dan keadaan kredit pemohon. Kami secara tegas <strong>TIDAK mengenakan sebarang yuran pendahuluan</strong> (no upfront fees) atau caj deposit sebelum permohonan diluluskan dan disalurkan. Segala permohonan adalah percuma.
+                    </p>
+                </div>
+
                 <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-                    <p className="text-xs text-gray-500">&copy; 2026 Kredit Rakyat. Hak Cipta Terpelihara.</p>
+                    <p className="text-xs text-gray-500">&copy; 2026 Rakyat Fintech Sdn. Bhd. Hak Cipta Terpelihara.</p>
                     <div className="flex gap-6 text-xs text-gray-500">
-                        <a href="#" className="hover:text-primary">Dasar Privasi</a>
-                        <a href="#" className="hover:text-primary">Terma & Syarat</a>
-                        <span className="flex items-center gap-1"><i className="fas fa-shield-alt text-primary"></i> Lesen Kementerian Kewangan</span>
+                        <a href="#" className="hover:text-primary transition-colors">Dasar Privasi</a>
+                        <a href="#" className="hover:text-primary transition-colors">Terma & Syarat</a>
+                        <span className="flex items-center gap-2"><i className="fas fa-shield-alt text-primary"></i> Platform Patuh Syariah</span>
                     </div>
                 </div>
             </div>
