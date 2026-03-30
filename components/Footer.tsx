@@ -5,10 +5,7 @@ export default function Footer() {
                 <div className="grid md:grid-cols-4 gap-12 mb-12">
                     <div className="col-span-2 md:col-span-1">
                         <div className="flex items-center gap-2 mb-6">
-                            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-lime to-limeDark flex items-center justify-center text-gray-900 font-bold">
-                                <i className="fas fa-university"></i>
-                            </div>
-                            <span className="text-xl font-display font-bold text-gray-900">KREDIT RAKYAT</span>
+                            <img src="/kredit-rakyat/logo.png" alt="Kredit Rakyat" className="h-10 w-auto object-contain" />
                         </div>
                         <p className="text-sm text-gray-500 leading-relaxed mb-6">Platform pembiayaan pilihan penjawat awam Malaysia. Komited untuk memberikan perkhidmatan kewangan yang selamat, patuh syariah dan telus.</p>
                         <div className="flex gap-3">
