@@ -51,7 +51,9 @@ export default function Footer() {
 
                 <div className="border-t border-gray-200 mt-8 pt-8 mb-8 text-xs text-gray-500 leading-relaxed text-justify">
                     <p>
-                        <strong>Maklumat Identiti & Kepatuhan Polisi Kewangan:</strong> Kredit Rakyat adalah entiti pemasaran rasmi yang diuruskan sepenuhnya oleh <strong>Rakyat Fintech Sdn. Bhd.</strong> Tempoh bayaran balik pembiayaan bermula dari minimum 12 bulan sehingga maksimum 120 bulan. Kadar Peratusan Tahunan (APR) maksimum adalah sekitar 4.99% tertakluk pada tawaran semasa institusi kewangan dan keadaan kredit pemohon. Kami secara tegas <strong>TIDAK mengenakan sebarang yuran pendahuluan</strong> (no upfront fees) atau caj deposit sebelum permohonan diluluskan dan disalurkan. Segala permohonan adalah percuma.
+                        <strong>Rakyat Fintech Sdn. Bhd.</strong> merupakan pengurus rasmi untuk pemasaran jenama Kredit Rakyat. 
+                        <strong> Terma Pembiayaan:</strong> Tempoh bayaran balik dari <strong>12 hingga 120 bulan</strong>. Kadar Peratusan Tahunan (APR) maksimum: <strong>4.99%</strong> (tertakluk kepada kelulusan institusi kewangan). 
+                        <strong> Polisi Telus:</strong> Kami secara tegas <strong>TIDAK mengenakan sebarang yuran pendahuluan</strong> (no upfront fees) atau caj pemprosesan tersembunyi.
                     </p>
                 </div>
 
