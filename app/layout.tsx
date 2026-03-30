@@ -88,6 +88,8 @@ const localBusinessJsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Rakyat Fintech Sdn Bhd",
+  "legalName": "Rakyat Fintech Sdn. Bhd. (202501018111 (1619525-V))",
+  "taxID": "202501018111 (1619525-V)",
   "url": "https://kreditrakyat.com/",
   "logo": "https://kreditrakyat.com/wp-content/uploads/2025/07/KR-Brand-Guideline-06-2048x495.png",
   "description": "Kakitangan kerajaan perlukan pinjaman yang mudah? Kredit Rakyat tawarkan pinjaman peribadi dari bank & koperasi dengan kelulusan cepat dalam 1 hari. Hubungi kami.",

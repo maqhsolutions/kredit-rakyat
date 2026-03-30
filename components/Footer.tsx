@@ -51,14 +51,14 @@ export default function Footer() {
 
                 <div className="border-t border-gray-200 mt-8 pt-8 mb-8 text-xs text-gray-500 leading-relaxed text-justify">
                     <p>
-                        <strong>Rakyat Fintech Sdn. Bhd.</strong> merupakan pengurus rasmi untuk pemasaran jenama Kredit Rakyat. 
+                        <strong>Rakyat Fintech Sdn. Bhd. (202501018111 (1619525-V))</strong> merupakan pengurus rasmi untuk pemasaran jenama Kredit Rakyat. 
                         <strong> Terma Pembiayaan:</strong> Tempoh bayaran balik dari <strong>12 hingga 120 bulan</strong>. Kadar Peratusan Tahunan (APR) maksimum: <strong>4.99%</strong> (tertakluk kepada kelulusan institusi kewangan). 
                         <strong> Polisi Telus:</strong> Kami secara tegas <strong>TIDAK mengenakan sebarang yuran pendahuluan</strong> (no upfront fees) atau caj pemprosesan tersembunyi.
                     </p>
                 </div>
 
                 <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-                    <p className="text-xs text-gray-500">&copy; 2026 Rakyat Fintech Sdn. Bhd. Hak Cipta Terpelihara.</p>
+                    <p className="text-xs text-gray-500">&copy; 2026 Rakyat Fintech Sdn. Bhd. (202501018111 (1619525-V)). Hak Cipta Terpelihara.</p>
                     <div className="flex gap-6 text-xs text-gray-500">
                         <a href="#" className="hover:text-primary transition-colors">Dasar Privasi</a>
                         <a href="#" className="hover:text-primary transition-colors">Terma & Syarat</a>
