@@ -11,12 +11,11 @@ export default function Marquee() {
                     {[1, 2].map((_, idx) => (
                         <div key={idx} className="flex items-center gap-16 px-8">
                             {[
+                                { icon: 'fa-hands-helping', name: 'Yayasan Wawasan' },
+                                { icon: 'fa-hand-holding-heart', name: 'Yayasan Ihsan Rakyat' },
+                                { icon: 'fa-infinity', name: 'Xanderia' },
                                 { icon: 'fa-hand-holding-usd', name: 'Koperasi Tentera' },
                                 { icon: 'fa-piggy-bank', name: 'Koperasi Polis' },
-                                { icon: 'fa-chalkboard-teacher', name: 'Koperasi Guru' },
-                                { icon: 'fa-users', name: 'Koperasi KSK' },
-                                { icon: 'fa-shield-alt', name: 'Koperasi Kastam' },
-                                { icon: 'fa-briefcase', name: 'KOWAJA' },
                             ].map((bank, i) => (
                                 <div key={i} className="logo-item flex flex-col items-center min-w-[160px]">
                                     <div className="w-20 h-20 bg-gray-50 rounded-2xl flex items-center justify-center mb-3 shadow-sm">
