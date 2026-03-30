@@ -17,7 +17,7 @@ export default function CTA({ onOpenModal }: CTAProps) {
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
                 <span className="inline-block px-4 py-1.5 rounded-full bg-lime/20 text-lime text-sm font-semibold mb-6 border border-lime/30">PERMOHONAN PERCUMA</span>
                 <h2 className="font-display text-4xl lg:text-6xl font-bold text-white mb-6">Jom Mohon Sekarang?</h2>
-                <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">Dapatkan kelulusan pantas dalam 24 jam. Konsultan kewangan kami sedia membantu anda 7 hari seminggu.</p>
+                <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">Dapatkan kelulusan pantas dalam 48 jam. Konsultan kewangan kami sedia membantu anda 7 hari seminggu.</p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <button onClick={onOpenModal} className="btn-primary text-white px-10 py-4 rounded-full font-bold text-lg shadow-xl shadow-primary/50 inline-flex items-center justify-center gap-3">
