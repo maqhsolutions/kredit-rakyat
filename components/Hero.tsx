@@ -1,14 +1,14 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { useModal } from "../app/ModalContext";
 
-interface HeroProps {
-    onOpenModal: () => void;
-}
+interface HeroProps {}
 
 declare const AOS: { init: (options?: Record<string, unknown>) => void };
 
-export default function Hero({ onOpenModal }: HeroProps) {
+export default function Hero({}: HeroProps) {
+    const { openModal } = useModal();
     const [loanAmount, setLoanAmount] = useState(50000);
     const [displayAmount, setDisplayAmount] = useState("50,000");
     const [tenure, setTenure] = useState(5);
@@ -90,7 +90,7 @@ export default function Hero({ onOpenModal }: HeroProps) {
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 mb-10 justify-center">
-                            <button onClick={onOpenModal} className="btn-primary text-white px-8 py-4 rounded-full font-bold text-base flex items-center justify-center gap-3 shadow-xl shadow-primary/30 group">
+                            <button onClick={openModal} className="btn-primary text-white px-8 py-4 rounded-full font-bold text-base flex items-center justify-center gap-3 shadow-xl shadow-primary/30 group">
                                 <span>Semak Kelayakan Percuma</span>
                                 <i className="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
                             </button>
@@ -181,7 +181,7 @@ export default function Hero({ onOpenModal }: HeroProps) {
                                         <p className="text-5xl font-display font-bold text-gray-900">RM{monthlyPayment.toLocaleString()}</p>
                                     </div>
 
-                                    <button onClick={onOpenModal} className="w-full btn-primary text-white py-3 rounded-xl font-bold text-sm flex items-center justify-center gap-2 shadow-lg shadow-primary/30">
+                                    <button onClick={openModal} className="w-full btn-primary text-white py-3 rounded-xl font-bold text-sm flex items-center justify-center gap-2 shadow-lg shadow-primary/30">
                                         <i className="fab fa-whatsapp"></i>
                                         Dapatkan Anggaran Tepat
                                     </button>

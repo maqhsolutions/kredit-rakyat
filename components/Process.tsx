@@ -1,12 +1,11 @@
 "use client";
 
-import React from "react";
+import { useModal } from "../app/ModalContext";
 
-interface ProcessProps {
-    onOpenModal: () => void;
-}
+interface ProcessProps {}
 
-export default function Process({ onOpenModal }: ProcessProps) {
+export default function Process({}: ProcessProps) {
+    const { openModal } = useModal();
     return (
         <section id="proses" className="py-24 bg-white relative">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -42,7 +41,7 @@ export default function Process({ onOpenModal }: ProcessProps) {
                 </div>
 
                 <div className="mt-16 text-center">
-                    <button onClick={onOpenModal} className="btn-primary text-white px-10 py-4 rounded-full font-bold text-lg shadow-xl shadow-primary/30 inline-flex items-center gap-3 group">
+                    <button onClick={openModal} className="btn-primary text-white px-10 py-4 rounded-full font-bold text-lg shadow-xl shadow-primary/30 inline-flex items-center gap-3 group">
                         <span>Mula Permohonan</span>
                         <i className="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
                     </button>

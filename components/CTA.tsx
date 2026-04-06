@@ -1,12 +1,11 @@
 "use client";
 
-import React from "react";
+import { useModal } from "../app/ModalContext";
 
-interface CTAProps {
-    onOpenModal: () => void;
-}
+interface CTAProps {}
 
-export default function CTA({ onOpenModal }: CTAProps) {
+export default function CTA({}: CTAProps) {
+    const { openModal } = useModal();
     return (
         <section className="py-24 bg-dark relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
@@ -20,7 +19,7 @@ export default function CTA({ onOpenModal }: CTAProps) {
                 <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">Dapatkan kelulusan pantas dalam 48 jam. Konsultan kewangan kami sedia membantu anda 7 hari seminggu.</p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <button onClick={onOpenModal} className="btn-primary text-white px-10 py-4 rounded-full font-bold text-lg shadow-xl shadow-primary/50 inline-flex items-center justify-center gap-3">
+                    <button onClick={openModal} className="btn-primary text-white px-10 py-4 rounded-full font-bold text-lg shadow-xl shadow-primary/50 inline-flex items-center justify-center gap-3">
                         <span>Mohon Sekarang</span>
                         <i className="fas fa-arrow-right"></i>
                     </button>

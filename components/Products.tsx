@@ -1,12 +1,11 @@
 "use client";
 
-import React from "react";
+import { useModal } from "../app/ModalContext";
 
-interface ProductsProps {
-    onOpenModal: () => void;
-}
+interface ProductsProps {}
 
-export default function Products({ onOpenModal }: ProductsProps) {
+export default function Products({}: ProductsProps) {
+    const { openModal } = useModal();
     return (
         <section id="produk" className="py-24 bg-white relative">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -23,7 +22,7 @@ export default function Products({ onOpenModal }: ProductsProps) {
                         { icon: 'fa-compress-arrows-alt', title: 'Penyatuan Hutang', desc: 'Gabungkan hutang menjadi satu. Kurangkan komitmen bulanan.', gradient: 'from-orange-400 to-orange-600', shadow: 'shadow-orange/30' },
                         { icon: 'fa-home', title: 'Pinjaman Perumahan', desc: 'Program LPHS, PR1MA & PKNS untuk kakitangan kerajaan.', gradient: 'from-blue-500 to-blue-700', shadow: 'shadow-blue/30' },
                     ].map((prod, i) => (
-                        <div key={i} className="group bg-surface rounded-3xl p-8 border border-gray-100 hover:shadow-xl transition-all duration-500 hover:-translate-y-2 cursor-pointer" onClick={onOpenModal}>
+                        <div key={i} className="group bg-surface rounded-3xl p-8 border border-gray-100 hover:shadow-xl transition-all duration-500 hover:-translate-y-2 cursor-pointer" onClick={openModal}>
                             <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br flex items-center justify-center text-white text-2xl mb-6 shadow-lg transition-transform ${prod.gradient} ${prod.shadow} group-hover:scale-110`}>
                                 <i className={`fas ${prod.icon} ${i === 1 ? 'text-gray-900' : ''}`}></i>
                             </div>

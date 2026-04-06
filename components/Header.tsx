@@ -1,12 +1,12 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { useModal } from "../app/ModalContext";
 
-interface HeaderProps {
-    onOpenModal: () => void;
-}
+interface HeaderProps {}
 
-export default function Header({ onOpenModal }: HeaderProps) {
+export default function Header({}: HeaderProps) {
+    const { openModal } = useModal();
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -37,7 +37,7 @@ export default function Header({ onOpenModal }: HeaderProps) {
                         </div>
 
                         <div className="flex items-center gap-4">
-                            <button onClick={onOpenModal} className="hidden md:flex btn-primary text-white px-6 py-3 rounded-full font-semibold text-sm items-center gap-2 shadow-lg shadow-primary/30">
+                            <button onClick={openModal} className="hidden md:flex btn-primary text-white px-6 py-3 rounded-full font-semibold text-sm items-center gap-2 shadow-lg shadow-primary/30">
                                 <span>Mohon Sekarang</span>
                                 <i className="fas fa-arrow-right text-xs"></i>
                             </button>
@@ -62,7 +62,7 @@ export default function Header({ onOpenModal }: HeaderProps) {
                                     {item === 'faqs' ? 'Soalan Lazim' : item.replace('-', ' ')}
                                 </a>
                             ))}
-                            <button onClick={() => { onOpenModal(); setIsMobileMenuOpen(false); }} className="w-full btn-primary text-white py-4 rounded-xl font-bold mt-4">
+                            <button onClick={() => { openModal(); setIsMobileMenuOpen(false); }} className="w-full btn-primary text-white py-4 rounded-xl font-bold mt-4">
                                 Mohon Sekarang
                             </button>
                         </div>

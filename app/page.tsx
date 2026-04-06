@@ -13,6 +13,7 @@ import Testimonials from "../components/Testimonials";
 import FAQ from "../components/FAQ";
 import CTA from "../components/CTA";
 import Footer from "../components/Footer";
+import { ModalContext } from "./ModalContext";
 
 declare const AOS: { init: (options?: Record<string, unknown>) => void };
 
@@ -84,18 +85,20 @@ export default function Home() {
         <div className="font-sans text-gray-800 bg-surface overflow-x-hidden min-h-screen">
             <div className="noise-overlay"></div>
 
-            <Header onOpenModal={() => setIsModalOpen(true)} />
-            <Hero onOpenModal={() => setIsModalOpen(true)} />
-            <Marquee />
-            <About />
-            <Products onOpenModal={() => setIsModalOpen(true)} />
-            <Benefits />
-            <Comparison />
-            <Process onOpenModal={() => setIsModalOpen(true)} />
-            <Testimonials />
-            <FAQ />
-            <CTA onOpenModal={() => setIsModalOpen(true)} />
-            <Footer />
+            <ModalContext.Provider value={{ openModal: () => setIsModalOpen(true) }}>
+                <Header />
+                <Hero />
+                <Marquee />
+                <About />
+                <Products />
+                <Benefits />
+                <Comparison />
+                <Process />
+                <Testimonials />
+                <FAQ />
+                <CTA />
+                <Footer />
+            </ModalContext.Provider>
 
             {/* Modal */}
             {isModalOpen && (
